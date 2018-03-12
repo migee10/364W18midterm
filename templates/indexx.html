@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="page-header">
+    <h1>Welcome to Pokehelper, there are {% if num_pokemon %}{{ num_pokemon }}{% else %}0{% endif %} pokemon saved. </h1>
+    <p>Welcome to Pokemon Trainer Club, keep track of the Pokemon you've caught by filling out the infomation in this form. <i></i></p>
+
+
+</div>
+
+<div>
+<form method="POST">
+	{{ form.hidden_tag() }}
+	{{ form.text.label }} <br>{{ form.text() }} <br> <br> <br>
+	{{ form.username.label }} <br> {{ form.username() }} <br> <br> <br>
+  {{ form.team_name.label }} <br> {{ form.team_name() }} <br> <br> <br>
+	{{ form.submit() }}
+</form>
+</div>
+
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
+
+{% endblock %}

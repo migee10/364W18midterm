@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  {% if text %}
+    <li>{{ text }} <br>
+    <i>owned by</i><strong>@{{ user }}</strong> </li>
+    <br> <br>
+
+  {% else %}
+    Please choose a Pokemon. No Pokemon to display.
+    {% endif %}
+</div>
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>*** {{ message }} ***</strong>
+{% endfor %}
+</div>
+
+{% endblock %}

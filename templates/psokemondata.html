@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1> Welcome to the Pokedex </h1>
+    <h2>Profile of {{ data['forms'][0]['name'] }}</h2>
+    <h3>Base Experience : {{ data['base_experience'] }}</h3>
+    <h3>First Move : {{ data['moves'][0]['move']['name'] }}</h3>
+    <h3>Type : {{ data['types'][0]['type']['name'] }}</h3>
+
+
+{% endblock %}

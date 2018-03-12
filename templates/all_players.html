@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Registered Users and their Teams </h1>
+
+<ul>
+{% for nm in users %}
+  <li>{{ nm.username }} is on <i>{{ nm.team_name }}</i></li><br>
+{% endfor %}
+</ul>
+
+{% if not users %}
+    There are no users to show.
+{% endif %}
+
+{% endblock %}

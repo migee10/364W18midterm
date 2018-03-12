@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Caught Pokemon: </h1>
+<ul>
+{% for poke in all_pokemon %}
+    <li> A <strong> {{ poke[0] }} </strong> <i> was caught by</i> <strong>@{{ poke[1] }}!</strong></li><br>
+{% endfor %}
+</ul>
+
+{% if not all_pokemon %}
+    There are no saved tweets to show.
+{% endif %}
+
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>*** {{ message }} ***</strong>
+{% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<html>
+<h1> Pokedex </h1>
+<h3> Search a Pokemon name to learn more about it's stats </h3>
+<body>
+<form method = "POST" action="http://localhost:5000/pokemondata">
+  {{ form.hidden_tag() }}
+  {% for message in get_flashed_messages() %}
+  {{ message }}
+  {% endfor %}
+<h4>{{ form.pokemonName.label }} : {{ form.pokemonName() }}</h4>
+{{ form.submit() }}
+</form>
+</body>
+</html>
+
+{% endblock %}
