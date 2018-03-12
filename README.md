@@ -9,6 +9,12 @@
 * Create a `README.md` file for your app that includes the full list of requirements from this page. The ones you have completed should be bolded. (You bold things in Markdown by using two asterisks, like this: `**This text would be bold** and this text would not be`)
 * The `README.md` file should include a list of all of the routes that exist in the app and the names of the templates each one should render (e.g. `/form` -> `form.html`, like [the list we provided in the instructions for HW2](https://www.dropbox.com/s/3a83ykoz79tqn8r/Screenshot%202018-02-15%2013.27.52.png?dl=0)).
 * The `README.md` file should contain at least 1 line of description of what your app is about or should do.
+http://localhost:500/ -> indexx.html
+http://localhost:500/see_all_pokemon -> all_pokemon.html
+http://localhost:500/all_users -> all_players.html
+http://localhost:500/pokemon -> pokemon.html
+http://localhost:500/pokemondata -> psokemondata.html
+
 
 #### Code Requirements
 
