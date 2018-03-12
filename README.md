@@ -5,7 +5,6 @@
 
 This is a app that uses the Pokemon API to help players keep track of which pokemon have been caught by whom, and which team they are on. Users are also able to use the Pokedex to learn more about a specific pokemon. 
 
-* The `README.md` file should contain at least 1 line of description of what your app is about or should do.
 - 'http://localhost:500/ -> indexx.html'
 - 'http://localhost:500/see_all_pokemon -> all_pokemon.html'
 - 'http://localhost:500/all_users -> all_players.html'
